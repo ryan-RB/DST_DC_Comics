@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap%27);
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: #222 url(https://i.imgur.com/HWu44Bv.png)no-repeat fixed center center / cover;
+
+}
+
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+
+}
+h1,h2,ol,p{
+    margin: 0;
+    font-weight: lighter;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color: #222;
+}
+a{
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* theme */
+:root{
+    --color-default: #3D3838;
+    --color-link: #333;
+    --color-body: #32b0f3;
+    --header-color: #fff;
+
+}
+header h1::before{
+    content: '\2605';
+    vertical-align: 0.3rem;
+    margin-right: 0.5rem;
+    color: rgba(231, 76, 60,1.0);
+}
+header, main{
+    padding: 0.5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    border: solid .1rem transparent;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    padding-top: 3rem;
+}
+header h1  {
+    text-align: center;
+    font-family: 'Zhi Mang Xing', cursive;
+
+}
+main h2 {
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+main nav h2, main section h2{
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    background-color: var(--color-body);
+    box-shadow: 0 .3rem 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.2rem 0.2rem 0 rgba(0,0,0,0.1);
+}
+main .pictures img{
+    display: block;
+    width: 100%;
+}
+nav ol{
+    margin: 1.5rem 0;
+}
+nav ol li{
+    line-height: 2.6rem;
+}
+section p{
+    padding: .5rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+main section .pictures{
+    padding-bottom: .5rem;
+}
+main footer{
+    padding: .5rem;
+}
+main footer p{
+    text-align: center;
+    text-transform: capitalize;
+}
+/* historique des liens */
+main .comics{
+    transition-duration: 0.9s;
+}
+main .comics:target{
+    background-color: var(--color-default);
+    color: var(--header-color);
+}
